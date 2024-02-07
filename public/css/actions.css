@@ -1,0 +1,9 @@
+.links-container{
+    /* transition: opacity 2s ease; */
+    transition: transform 1s cubic-bezier(0.42, 0, 0.15, 1.4);
+}
+
+.container.hide .links-container{
+    transform: translate(1000px);
+    opacity: 0;
+}

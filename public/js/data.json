@@ -1,0 +1,53 @@
+{
+    "hero": ["hero1.png", "hero2.png", "hero3.png", "hero4.png"],
+    
+    "about_me": "<p>¡Hola! ¡Soy <b>Juan Pablo</b>, programador full-stack! Con más de 2 años de experiencia, me considero un solucionador de problemas incansable, si me planteo un objetivo, no descanso hasta alcanzarlo y lo más importante, un buen compañero. Me desempeño como desarrollador web, tanto en el front-end como el back-end, con Python y Django.</p><br/><p>Disfruto formando parte del proceso de creación de aplicaciones web, desde la planificación y la elección de tecnologías, hasta la estructuracion e implementación de funcionalidades escribiendo líneas de código (mágicas). He completado diversos cursos de desarrollo web y he puesto a prueba mis habilidades en una variedad de proyectos, desde páginas web hasta API's. Siempre con ganas de mejorar mis habilidades y aportar a la creación de aplicaciones web innovadoras.</p><br/><p>Además de mi pasión por la tecnología y la programación, tengo interés en la educación (experiencia en tutorías de programación), brindar ayuda a los demás (ya sea resolviendo problemas de programación o simplemente charlando sobre la vida), y practicar deportes (amo jugar al básquet, pero estoy para un fulbito).</p><br/><p>¡Vamos a crear algo genial juntos!</p>",
+    
+    "projects": [
+        {
+            "title": "Mercado Virtual",
+            "url": "https://juanpabloch.github.io/Curso-React/TP-6/",
+            "github": "https://github.com/juanpabloch/Curso-React/tree/master/TP-6",
+            "description": "Plataforma de comercio electrónico.<br/>Proyecto de práctica para el curso de Diplomatura en Programación Web Full Stack con React.js de UTN Center for e-Learning. Implementación de tecnologias como HTML, CSS y JavaScript para aplicar y consolidar los conocimientos adquiridos en el curso, especialmente en términos de desarrollo web frontend y la creación de interfaces interactivas.<br/><br/> <b>Tecnologías Utilizadas:</b> HTML, CSS, JavaScript.",
+            "tags": ["HTML", "CSS", "JavaScript"],
+            "image": "mercado_virtual.png"
+        },
+
+        {
+            "title": "Catálogo sillones",
+            "url": "https://react-sillones.vercel.app/",
+            "github": "https://github.com/juanpabloch/react-sillones",
+            "description": "Catálogo interactivo de sillones.<br/>Proyecto de práctica para el curso Diplomatura en Programación Web Full Stack con React.js de UTN Center for e-Learning. La aplicación demuestra habilidades en la creación de componentes en React, la gestión de estados y la manipulación de datos en el contexto de una aplicación web simple.<br/><br/> <b>Tecnologías Utilizadas:</b> React.js, HTML, CSS, JavaScript.",
+            "tags": ["React.js", "HTML", "CSS", "JavaScript"],
+            "image": "sillones.png"
+        },
+
+        {
+            "title": "Torneo 3v3",
+            "url": "https://torneo-3vs3.vercel.app/",
+            "github": "https://github.com/juanpabloch/torneo-3vs3",
+            "description": "Organización y participación en torneos de basquet 3v3.<br/>Proyecto de práctica para el curso Diplomatura en Programación Web Full Stack con React.js de UTN Center for e-Learning. La aplicación demuestra habilidades en el desarrollo full stack, con especial énfasis en el backend utilizando Node.js y Express, así como la interacción con una base de datos PostgreSQL. La implementación de funciones de registro, sistema de login y autenticación mediante JWT.<br/><br/> <b>Tecnologías Utilizadas:</b> Node.js (Express), HTML, CSS, JavaScript, PostgreSQL, JWT.", 
+            "tags": ["Node.js", "Express", "HTML", "CSS", "JavaScript"],
+            "image": "3vs3.png"
+        },
+
+        {
+            "title": "Where's my book",
+            "url": "https://tp-grupo6-react.vercel.app/",
+            "github": "https://github.com/juanpabloch/tp-grupo6-react",
+            "description":"Gestor de libros de una biblioteca.<br/>Proyecto de práctica para el curso Diplomatura en Programación Web Full Stack con React.js de UTN Center for e-Learning. Desarrollo full stack, donde se demuestra habilidades en el uso de React.js, gestión del estado con Redux y la creación de una API robusta con Node.js y Express.<br/><br/> <b>Tecnologías Utilizadas:</b> React.js, CSS, Bootstrap, Node.js (Express).",
+            "tags": ["React.js", "Boostrap", "Node.js", "Express", "CSS", "JavaScript"],
+            "image": "books.png"
+        },
+
+        {
+            "title": "Mail project",
+            "url": "https://django-email-app.onrender.com",
+            "github": "https://github.com/juanpabloch/cs50-Mail-project",
+            "description": "Plataforma para envío y recepción de mensajes.<br/>Este proyecto se creó como parte del curso CS50'S WEB PROGRAMMING WITH PYTHON AND JAVASCRIPT. La aplicación demuestra habilidades en el desarrollo web utilizando el framework Django para el backend y HTML, CSS y JavaScript para el frontend. La implementación de funciones de mensajería, incluyendo el envío, recepción, respuesta y archivado de mensajes entre usuarios registrados, proporciona una experiencia completa en el desarrollo de aplicaciones web interactivas y dinámicas.<br/><br/> <b>Tecnologías Utilizadas:</b> Django (Python), HTML, CSS, JavaScript.",
+            "tags": ["Django", "HTML", "CSS", "JavaScript"],
+            "image": "books.png"
+        }
+    ]
+}
+
