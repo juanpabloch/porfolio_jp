@@ -26,13 +26,31 @@
             <img id="hero-image" class="" src="public/img/face-photo1.png" alt="" />
         </div>
 
-		<div class="container">
-			<div class="links-container">
-				<a class="linksBtn" id="about-btn" data-bs-toggle="modal" data-bs-target="#aboutModal">sobre mí</a>
-				<a class="linksBtn" id="work-btn" data-bs-toggle="modal" data-bs-target="#worksModal">trabajos</a>
-				<a class="linksBtn" id="contact-btn" data-bs-toggle="modal" data-bs-target="#contactModal">contacto</a>
-			</div>
-		</div>
+        <section id="home">
+            <div class="container">
+                <div class="links-container">
+                    <a class="linksBtn" id="about-btn" data-bs-toggle="modal" data-bs-target="#aboutModal">sobre mí</a>
+                    <a class="linksBtn" id="work-btn" data-bs-toggle="modal" data-bs-target="#worksModal">trabajos</a>
+                    <!-- <a class="linksBtn" id="contact-btn" data-bs-toggle="modal" data-bs-target="#contactModal">contacto</a> -->
+                    <a class="linksBtn" id="contact-btn" href="#contacto">contacto</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="hide" id="contacto">
+            <div class="container">
+                <div class="contact">
+                    <div class="info">
+                        <h2>CONTACTO</h2>
+                        <p>Email: <a href="mailto:juanpablochoternasty@gmail.com">juanpablochoter@gmail.com</a></p>   
+                        <p></p>
+                    </div>
+                    <div class="image">
+                        <img src="./public/img/contact2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
 
 		<!-- About Modal -->
 		<div class="modal fade modalLink" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
@@ -254,6 +272,11 @@
         <script type="module" src="./public/js/uploadInfo.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 		<script src="./public/js/scripts.js"></script>
+    <!-- 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script> 
+    -->
 	</body>
 </html>
 

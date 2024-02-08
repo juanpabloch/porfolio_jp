@@ -9,16 +9,30 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     position: relative;
     width: 100vw;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    font-family: "Roboto", sans-serif;
+
+    transition: all 1s ease;
+}
+
+.hide{
+    display: none;
+}
+
+#home{
     height: 100vh;
     background-image: url(../img/bg/pexels-la-miko-3616764.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
-    font-family: "Roboto", sans-serif;
 }
 
 #hero-image{
@@ -472,4 +486,15 @@ body{
 
 #contactModal .image{
     flex: 2;
+}
+
+/* pruebas */
+#contacto{
+    height: 100vh;
+    padding: 50px;
+    transition: opacity 0.5s ease;
+}
+
+.hideja{
+    opacity: 0;
 }
