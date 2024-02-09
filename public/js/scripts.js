@@ -9,6 +9,21 @@ window.addEventListener("load", (e)=>{
 })
 
 
+linksBtns.forEach(btn=>{
+    btn.addEventListener('click', (e)=>{
+        const currentScrollPos = Math.ceil(window.scrollY)
+
+        if (currentScrollPos > 0) {
+            window.scrollTo(0,0)
+        }
+
+        if(e.target.classList.contains("onClick_contact-btn")){
+            e.preventDefault()
+        }
+    })
+})
+
+
 let glitchAnimation;
 linksBtns.forEach(btn=>{
     btn.addEventListener("mouseover", (e)=>{
@@ -107,10 +122,10 @@ window.addEventListener('scroll', () => {
     }
 
     if (currentScrollPos < lastScrollPos && currentScrollPos < 110) {
-        document.getElementById('contacto').classList.add('hideja');
+        document.querySelector('#contacto .container').classList.add('opacity0');
     }else{
-        if (document.getElementById('contacto').classList.contains('hideja')) {
-            document.getElementById('contacto').classList.remove('hideja');
+        if (document.querySelector('#contacto .container').classList.contains('opacity0')) {
+            document.querySelector('#contacto .container').classList.remove('opacity0');
         }
     }
 

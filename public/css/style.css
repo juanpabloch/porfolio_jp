@@ -19,8 +19,15 @@ body{
     /* height: 100vh; */
     /* overflow: hidden; */
     font-family: "Roboto", sans-serif;
+    background-image: url(../img/bg/pexels-la-miko-3616764.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transition: all 1s ease; */
+}
 
-    transition: all 1s ease;
+a{
+    text-decoration: none;
 }
 
 .hide{
@@ -29,10 +36,7 @@ body{
 
 #home{
     height: 100vh;
-    background-image: url(../img/bg/pexels-la-miko-3616764.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 #hero-image{
@@ -127,7 +131,7 @@ body{
 .links-container a{
     position: relative;
     cursor: pointer;
-    text-decoration: none;
+    
     color: #00000024;
     transition: all 0.4s cubic-bezier(.17,-0.11,.89,1.25);
     letter-spacing: -3px;
@@ -136,7 +140,7 @@ body{
     writing-mode:sideways-lr;/* should be the one */  
     -webkit-writing-mode: vertical-lr;
     
-    margin: 0px calc(1vh - 40px);
+    margin: 0px calc(1vh - 30px);
     font-size: calc(3vh + 7vmin);
 }
 
@@ -185,19 +189,19 @@ body{
 
 @media screen and (max-height:900px) {
     .links-container a{ 
-        margin: 0px calc(1vh - 28px);
+        margin: 0px calc(1vh - 30px);
     }
 }
 
 @media screen and (max-height:620px) {
     .links-container a{ 
-        margin: 0px calc(1vh - 22px);
+        margin: 0px calc(1vh - 20px);
     }
 }
 
 @media screen and (max-height:500px) {
     .links-container a{ 
-        margin: 0px calc(1vh - 15px);
+        margin: 0px calc(1vh - 13px);
     }
 }
 
@@ -339,7 +343,7 @@ body{
 }
 
     #worksModal .carousel-item{
-        border-radius: 3px;
+        border-radius: 2px;
         transition: transform 1500ms ease, opacity .5s ease-out
     }
 
@@ -359,7 +363,6 @@ body{
     }
 
     #worksModal .carousel-item .info a{
-        text-decoration: none;
         color: #00000044;
         font-weight: 400;
         font-family: "Archivo Black", sans-serif;
@@ -464,7 +467,7 @@ body{
 
 
 /* Contact */
-#contactModal .modal-body{
+/* #contactModal .modal-body{
     background: rgb(76,76,75);
     background: linear-gradient(137deg, rgba(255, 255, 255, 0.65) 10%, rgb(175, 175, 175) 54%);
 
@@ -486,15 +489,52 @@ body{
 
 #contactModal .image{
     flex: 2;
-}
+} */
 
 /* pruebas */
 #contacto{
-    height: 100vh;
+    height: 50vh;
     padding: 50px;
-    transition: opacity 0.5s ease;
+    background: url('../img/bg/fondo2.png');
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-position: cover;
+    color: rgb(222, 222, 222);
 }
 
-.hideja{
+#contacto .container{
+    transition: opacity 0.7s ease;
+}
+
+.opacity0{
     opacity: 0;
+}
+
+.arrow-up{
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    width: 60px;
+    transform: rotate(-90deg);
+    filter: brightness(50%) invert();
+}
+
+.animate_arrow-up{
+    animation: arrow-up 0.8s ease-in-out infinite;
+}
+
+.animate_arrow-up:hover{
+    animation-play-state: paused;
+}
+
+@keyframes arrow-up{
+    0% {
+        transform: rotate(-90deg) translate(0px, 0);
+    }
+    50% {
+        transform: rotate(-90deg) translate(7px, 0);
+    }
+    100% {
+        transform: rotate(-90deg) translate(0px, 0);
+    }
 }
