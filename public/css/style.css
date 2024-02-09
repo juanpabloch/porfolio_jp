@@ -19,10 +19,10 @@ body{
     /* height: 100vh; */
     /* overflow: hidden; */
     font-family: "Roboto", sans-serif;
-    background-image: url(../img/bg/pexels-la-miko-3616764.jpg);
+    /* background-image: url(../img/bg/pexels-la-miko-3616764.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     /* transition: all 1s ease; */
 }
 
@@ -36,7 +36,7 @@ a{
 
 #home{
     height: 100vh;
-    
+    background-color: #fff;
 }
 
 #hero-image{
@@ -496,7 +496,7 @@ a{
     height: 50vh;
     padding: 50px;
     background: url('../img/bg/fondo2.png');
-    background-position: center;
+    background-position: initial;
     background-repeat:  no-repeat;
     background-position: cover;
     color: rgb(222, 222, 222);

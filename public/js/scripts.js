@@ -104,9 +104,12 @@ contactLink.addEventListener('click', (e)=>{
 // });
 
 let lastScrollPos = 0;
-
+const homeEl = document.querySelector("#home")
 window.addEventListener('scroll', () => {
     const currentScrollPos = window.scrollY;
+    // Math.ceil(window.scrollY)
+    // console.log()
+    homeEl.style.backgroundColor = `rgb(250,${window.scrollY + 50},${77 + window.scrollY + 50})`;
 
     // Verificar si el usuario está desplazándose hacia arriba y cerca del principio de la página
     if (currentScrollPos < lastScrollPos && currentScrollPos < 100) {
