@@ -15,7 +15,7 @@ html{
 
 body{
     position: relative;
-    width: 100vw;
+    /* width: 100%; */
     /* height: 100vh; */
     /* overflow: hidden; */
     font-family: "Roboto", sans-serif;
@@ -36,7 +36,7 @@ a{
 
 #home{
     height: 100vh;
-    background-color: #fff;
+    position: relative;
 }
 
 #hero-image{
@@ -160,15 +160,18 @@ a{
 
 .links-container a:nth-child(1):hover{
     margin-bottom: 17vh;
+    /* margin-right: 5px; */
     font-size: calc(4vh + 12vmin);
 }
 
 .links-container a:nth-child(2):hover{
     font-size: calc(4vh + 15vmin);
+    margin-left: -5px;
 }
 
 .links-container a:nth-child(3):hover{
     margin-bottom: 3vh;
+    margin-left: -5px;
     font-size: calc(4vh + 14vmin);
 }
 
@@ -537,4 +540,64 @@ a{
     100% {
         transform: rotate(-90deg) translate(0px, 0);
     }
+}
+
+/* Pruebas */
+#about{
+    height: 60vh;
+    opacity: 1;
+    transition: height 500ms ease-in;
+}
+
+#about.close{
+    height: 0px;
+    opacity: 0;
+}
+
+#about .about-text{
+    padding: 50px;
+}
+
+body{
+    background-color: rgb(147, 107, 226);
+}
+
+#work{
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+
+    /* flex: 1; */
+    width: 0px;
+    overflow: hidden;
+
+    transition: all 0.5s ease;
+}
+
+#page.show #work{
+    width: 100vw;
+    flex: 4;
+}
+
+#page.show #hero-image{
+    opacity: 0;
+}
+
+#work .work-container{
+    max-width: 500px;
+}
+
+#page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#home{
+    width: 100vw;
+    flex: 1;
 }

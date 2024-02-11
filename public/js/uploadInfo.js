@@ -1,6 +1,6 @@
-const modelAbout = document.getElementById('aboutModal').querySelector('.info_body')
+// const modelAbout = document.getElementById('aboutModal').querySelector('.info_body')
 const modelWorks = document.getElementById('worksModal').querySelector('.carousel-inner')
-const modelContact = document.getElementById('contactModal').querySelector('.info_body')
+// const modelContact = document.getElementById('contactModal').querySelector('.info_body')
 
 fetch("./public/js/data.json")
     .then((response)=> response.json())

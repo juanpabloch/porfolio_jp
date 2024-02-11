@@ -1,5 +1,19 @@
 const linksBtns = document.querySelectorAll(".linksBtn")
 
+const contactLink = document.getElementById('contact-btn')
+const contactContainer = document.getElementById('contacto')
+const contactContent = document.querySelector('#contacto .container')
+
+const aboutContainer = document.getElementById('about')
+const aboutLink = document.getElementById('about-btn')
+
+const workContainer = document.getElementById('work')
+const homeContainer = document.getElementById('home')
+
+const pageContainer = document.getElementById('page')
+
+
+
 window.addEventListener("load", (e)=>{
     if (navigator.userAgent.indexOf("Chrome") > -1) {
         document.querySelectorAll(".linksBtn").forEach(link=>{
@@ -19,6 +33,17 @@ linksBtns.forEach(btn=>{
 
         if(e.target.classList.contains("onClick_contact-btn")){
             e.preventDefault()
+        }
+
+        if (e.target.dataset.link == "contact") {
+            contactContainer.classList.remove('hide')
+            window.scrollTo(0, document.body.scrollHeight);
+        }else if(e.target.dataset.link == "about"){
+            aboutContainer.classList.remove('close')
+            window.scrollTo(0, 0)
+        }else if (e.target.dataset.link == "work") {
+            pageContainer.classList.add('show')
+            // homeContainer.classList.add('opacity0')
         }
     })
 })
@@ -55,10 +80,11 @@ modalsLinksList.forEach(modal=>{
     })
 })
 
-const contactLink = document.getElementById("contact-btn")
-contactLink.addEventListener('click', (e)=>{
-    document.getElementById('contacto').classList.remove('hide')
-})
+// const contactContainer = document.getElementById("contact-btn")
+// contactContainer.addEventListener('click', (e)=>{
+//     document.getElementById('contacto').classList.remove('hide')
+//     window.scrollTo(0, document.body.scrollHeight);
+// })
 
 
 // const homeHeight = document.documentElement.scrollHeight
@@ -104,34 +130,61 @@ contactLink.addEventListener('click', (e)=>{
 // });
 
 let lastScrollPos = 0;
-const homeEl = document.querySelector("#home")
+
 window.addEventListener('scroll', () => {
     const currentScrollPos = window.scrollY;
-    // Math.ceil(window.scrollY)
-    // console.log()
-    homeEl.style.backgroundColor = `rgb(250,${window.scrollY + 50},${77 + window.scrollY + 50})`;
 
-    // Verificar si el usuario está desplazándose hacia arriba y cerca del principio de la página
+    // scroll abajo
+    if (currentScrollPos > lastScrollPos && Math.ceil(currentScrollPos) >= 300 && !aboutContainer.classList.contains("close")) {
+        aboutContainer.classList.add("close")
+        aboutLink.classList.remove("onClick_about-btn");
+    }
+
+    // scroll arriba
     if (currentScrollPos < lastScrollPos && currentScrollPos < 100) {
-        // Ocultar el elemento #contacto
         window.scrollTo(0,0)
-        linksBtns.forEach(btn => {
-            btn.classList.remove(`onClick_${btn.id}`);
-        });
+        contactLink.classList.remove("onClick_contact-btn");
 
         if(currentScrollPos == 0){
-            document.getElementById('contacto').classList.add('hide');
+            contactContainer.classList.add('hide');
         }
     }
 
     if (currentScrollPos < lastScrollPos && currentScrollPos < 110) {
-        document.querySelector('#contacto .container').classList.add('opacity0');
+        contactContent.classList.add('opacity0');
     }else{
-        if (document.querySelector('#contacto .container').classList.contains('opacity0')) {
-            document.querySelector('#contacto .container').classList.remove('opacity0');
+        if (contactContent.classList.contains('opacity0')) {
+            contactContent.classList.remove('opacity0');
         }
     }
 
     // Actualizar la última posición de desplazamiento
     lastScrollPos = currentScrollPos;
 });
+
+// let lastScrollPos = 0;
+// const homeEl = document.querySelector("#home");
+// const contactoContainer = document.querySelector('#contacto .container');
+
+// window.addEventListener('scroll', (e) => {
+//     const currentScrollPos = window.scrollY;
+
+//     if (currentScrollPos > lastScrollPos && Math.ceil(currentScrollPos) >= 300 && !aboutContainer.classList.contains("close")) {
+//         aboutContainer.classList.add("close");
+//         linksBtns.forEach(btn => {
+//             btn.classList.remove(`onClick_${btn.id}`);
+//         });
+//     }
+
+//     if (currentScrollPos < lastScrollPos && currentScrollPos < 100) {
+//         window.scrollTo(0,0);
+//         linksBtns.forEach(btn => {
+//             btn.classList.remove(`onClick_${btn.id}`);
+//         });
+//         contactContainer.classList.toggle('hide', currentScrollPos === 0);
+//     }
+
+//     contactoContainer.classList.toggle('opacity0', currentScrollPos < lastScrollPos && currentScrollPos < 110);
+
+//     lastScrollPos = currentScrollPos;
+// });

@@ -22,26 +22,72 @@
 	<body>
 		<!-- <img id="sunglasses" src="public/img/sunglasses.png" alt="" /> -->
         <!-- <div class="glitch"> -->
-        <section id="home">
-            <div>
-                <img id="hero-image" class="" src="public/img/face-photo1.png" alt="" />
+        <section id="about" class="close">
+            <div class="about-text">
+                <p>¡Hola! ¡Soy <b>Juan Pablo</b>, programador full-stack! Con más de 2 años de experiencia, me 
+                    considero un solucionador de problemas incansable, si me planteo un objetivo, no descanso hasta 
+                    alcanzarlo y lo más importante, un buen compañero. Me desempeño como desarrollador web, tanto en el 
+                    front-end como el back-end, con Python y Django.</p>
+                <br/>
+                <p>Disfruto formando parte del proceso de creación de aplicaciones web, desde la planificación y la 
+                    elección de tecnologías, hasta la estructuracion e implementación de funcionalidades escribiendo 
+                    líneas de código (mágicas). He completado diversos cursos de desarrollo web y he puesto a prueba mis 
+                    habilidades en una variedad de proyectos, desde páginas web hasta API's. Siempre con ganas de mejorar 
+                    mis habilidades y aportar a la creación de aplicaciones web innovadoras.</p>
+                <br/>
+                <p>Además de mi pasión por la tecnología y la programación, tengo interés en la educación 
+                    (experiencia en tutorías de programación), brindar ayuda a los demás (ya sea resolviendo problemas 
+                    de programación o simplemente charlando sobre la vida), y practicar deportes (amo jugar al básquet, 
+                    pero estoy para un fulbito).</p>
+                <br/>
+                <p>¡Vamos a crear algo genial juntos!</p>
             </div>
+        </section>
 
-            <div class="container">
-                <div class="links-container">
-                    <a class="linksBtn" id="about-btn" data-bs-toggle="modal" data-bs-target="#aboutModal">sobre mí</a>
-                    <a class="linksBtn" id="work-btn" data-bs-toggle="modal" data-bs-target="#worksModal">trabajos</a>
-                    <!-- <a class="linksBtn" id="contact-btn" data-bs-toggle="modal" data-bs-target="#contactModal">contacto</a> -->
-                    <a class="linksBtn" id="contact-btn" href="#contacto">contacto</a>
+        <section id="page" class="">
+
+            <section id="home">
+                <div>
+                    <img id="hero-image" class="" src="public/img/face-photo1.png" alt="" />
                 </div>
-            </div>
+    
+                <div class="container">
+                    <div class="links-container">
+                        <!-- <a class="linksBtn" id="about-btn" data-bs-toggle="modal" data-bs-target="#aboutModal">sobre mí</a> -->
+                        <a class="linksBtn" id="about-btn" data-link="about">sobre mí</a>
+                        <!-- <a class="linksBtn" id="work-btn" data-bs-toggle="modal" data-bs-target="#worksModal">trabajos</a> -->
+                        <a class="linksBtn" id="work-btn" data-link="work">trabajos</a>
+                        <!-- <a class="linksBtn" id="contact-btn" data-bs-toggle="modal" data-bs-target="#contactModal">contacto</a> -->
+                        <a class="linksBtn" id="contact-btn" data-link="contact">contacto</a>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="work" class="">
+                <div class="work-container">
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="./public/img/works/mercado_virtual.png" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h2>Mercado Virtual</h2>
+                        <p>Plataforma de comercio electrónico.
+                            Proyecto de práctica para el curso de Diplomatura en Programación Web Full Stack con React.js de UTN Center for e-Learning. Implementación de tecnologias como HTML, CSS y JavaScript para aplicar y consolidar los conocimientos adquiridos en el curso, especialmente en términos de desarrollo web frontend y la creación de interfaces interactivas.</p>
+                        <a href="" target="_blank">VER WEB</a>
+                        <br/>
+                        <a href="" target="_blank">VER CODIGO</a>
+                    </div>
+                </div>
+            </section>
+
         </section>
 
         <section class="hide" id="contacto">
             <div class="container">
                 <div class="contact">
                     <div class="info">
-                        <a href="#home"><img src="./public/img/arrow.svg" class="arrow-up animate_arrow-up" alt="arrow-up"></a>
+                        <!-- <a href="#home"><img src="./public/img/arrow.svg" class="arrow-up animate_arrow-up" alt="arrow-up"></a> -->
                         <h2>CONTACTO</h2>
                         <p>Email: <a href="mailto:juanpablochoternasty@gmail.com">juanpablochoter@gmail.com</a></p>   
                         <p></p>
@@ -227,37 +273,6 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
-                        </div>
-                    </div>
-					<!-- <div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >
-							Close
-						</button>
-					</div> -->
-				</div>
-			</div>
-		</div>
-
-
-        <!-- Contact Modal -->
-		<div class="modal fade modalLink" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-xl">
-				<div class="modal-content">
-					<!-- <div class="modal-header">
-						<h1 class="modal-title fs-5" id="contactModalLabel">Contact</h1>
-					</div> -->
-					<div class="modal-body">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <div class="info_body">
-                            <div class="info">
-                                <h2>CONTACTO</h2>
-                                <p>Email: <a href="mailto:juanpablochoternasty@gmail.com">juanpablochoter@gmail.com</a></p>   
-                                <p></p>
-                            </div>
-                            <div class="image">
-                                <img src="./public/img/contact2.png" alt="">
-                            </div>
-
                         </div>
                     </div>
 					<!-- <div class="modal-footer">
