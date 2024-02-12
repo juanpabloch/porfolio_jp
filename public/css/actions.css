@@ -7,3 +7,51 @@
     transform: translate(1000px);
     opacity: 0;
 }
+
+
+.animate_glitch{
+    animation: glitch 2.8s infinite steps(1);
+}
+
+@keyframes glitch {
+    0%, 30%, 90%{
+        content: url('../img/face-photo1.png');
+        /* background-size: cover; */
+    }
+
+    22.5%{
+        content: url('../img/glitch-1.png');
+        /* background-size: cover; */
+        opacity: 1;
+    }
+
+    25%{
+        content: url('../img/glitch-2.png');
+        /* background-size: cover; */
+        opacity: 0;
+    }
+
+    27.5%{
+        content: url('../img/glitch-3.png');
+        /* background-size: cover; */
+        opacity: 1;
+    }
+
+    82.5%{
+        content: url('../img/glitch-4.png');
+        /* background-size: cover; */
+        opacity: 1;
+    }
+
+    85%{
+        content: url('../img/glitch-5.png');
+        /* background-size: cover; */
+        opacity: 0;
+    }
+
+    87.5%{
+        content: url('../img/glitch-6.png');
+        /* background-size: cover; */
+        opacity: 1;
+    }
+}

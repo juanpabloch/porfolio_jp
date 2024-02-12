@@ -15,15 +15,13 @@ html{
 
 body{
     position: relative;
-    /* width: 100%; */
-    /* height: 100vh; */
-    /* overflow: hidden; */
+    width: 100%;
     font-family: "Roboto", sans-serif;
-    /* background-image: url(../img/bg/pexels-la-miko-3616764.jpg);
+    
+    background-image: url(../img/bg/pexels-la-miko-3616764.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
-    /* transition: all 1s ease; */
+    background-size: cover;
 }
 
 a{
@@ -48,56 +46,9 @@ a{
     width: 950px;
     left: -220px;
     top: -400px;
+
+    transition: opacity 0.8s ease;
 }
-
-
-.animate_glitch{
-    animation: glitch 2.8s infinite steps(1);
-}
-
-@keyframes glitch {
-    0%, 30%, 90%{
-        content: url('../img/face-photo1.png');
-        /* background-size: cover; */
-    }
-
-    22.5%{
-        content: url('../img/glitch-1.png');
-        /* background-size: cover; */
-        opacity: 1;
-    }
-
-    25%{
-        content: url('../img/glitch-2.png');
-        /* background-size: cover; */
-        opacity: 0;
-    }
-
-    27.5%{
-        content: url('../img/glitch-3.png');
-        /* background-size: cover; */
-        opacity: 1;
-    }
-
-    82.5%{
-        content: url('../img/glitch-4.png');
-        /* background-size: cover; */
-        opacity: 1;
-    }
-
-    85%{
-        content: url('../img/glitch-5.png');
-        /* background-size: cover; */
-        opacity: 0;
-    }
-
-    87.5%{
-        content: url('../img/glitch-6.png');
-        /* background-size: cover; */
-        opacity: 1;
-    }
-}
-
 
 .container{
     position: relative;
@@ -335,22 +286,17 @@ a{
 }
 
 /* MODAL WORK */
-#worksModal .modal-body{
+#work .modal-body{
     padding: 0;
-    /* min-height: 650px; */
 }
 
-
-.carousel-control-next, .carousel-control-prev{
-    filter: invert(100%);
-}
-
-    #worksModal .carousel-item{
+    #work .carousel-item{
         border-radius: 2px;
-        transition: transform 1500ms ease, opacity .5s ease-out
+        transition: transform 1500ms ease, opacity .5s ease-out;
+        color: #ffffffac;
     }
 
-    #worksModal .carousel-item .info h2{
+    #work .carousel-item .info h2{
         font-family: "Archivo Black", sans-serif;
         font-size: 2.3rem;
         font-weight: 400;
@@ -359,26 +305,24 @@ a{
         text-transform: uppercase;
     }
 
-    #worksModal .carousel-item .info p{
+    #work .carousel-item .info p{
         font-size: 1.1rem;
         font-weight: 300;
         letter-spacing: 1.2px;
     }
 
-    #worksModal .carousel-item .info a{
-        color: #00000044;
+    #work .carousel-item .info a{
+        /* color: #00000044; */
         font-weight: 400;
         font-family: "Archivo Black", sans-serif;
         transition: all 0.5s ease;
     }
-        #worksModal .carousel-item .info a:hover{
-            color: #000000b5;
+        #work .carousel-item .info a:hover{
+            /* color: #000000b5; */
         }
 
 
-/* PRUEBAS */
-
-#worksModal .carousel-item .item-container{
+#work .carousel-item .item-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,16 +330,16 @@ a{
     padding: 20px 120px;
 }
 
-#worksModal .carousel-item .image-container{
+#work .carousel-item .image-container{
     flex: 3;
 }
 
-#worksModal .carousel-item .image-container .image{
+#work .carousel-item .image-container .image{
     max-width: 400px;
     margin: 0 auto;
 }
 
-#worksModal .carousel-item .info{
+#work .carousel-item .info{
     flex: 3;
     padding: 0 30px;
     margin: 30px 0;
@@ -406,21 +350,43 @@ a{
     flex-direction: column;
 }
 
-#worksModal .carousel-item img{
+#work .carousel-item img{
     width: 50px;
 }
 
+
+#work{
+    position: relative;
+    height: 100vh;
+    width: 0px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #000000;
+
+    transition: all 0.7s ease;
+}
+
+#work .arrow{
+    width: 50px;
+    transform: rotate(-180deg);
+    filter: invert();
+    cursor: pointer;
+}
 
 @media screen and (max-height:620px) {
     :root{
         font-size: 12.5px;
     }
-    #worksModal .carousel-item .item-container{
+    #work .carousel-item .item-container{
         gap: 20px;
         padding: 20px 90px;
     }
 
-    #worksModal .carousel-item .info{
+    #work .carousel-item .info{
         flex: 3;
         padding: 0 15px;
         margin: 20px 0;
@@ -435,66 +401,13 @@ a{
     }
 }
 
-@media screen and (max-height:500px) {
-    
+@media screen and (max-height:600px) and (min-width:1200px){
+    #hero-image{
+        width: 690px;
+    }
 }
 
 
-
-/* fondos */
-
-.fondo1{
-    background: rgb(120,119,117);
-    background: linear-gradient(137deg, rgba(120, 119, 117, 0.779) 0%, rgba(225,226,230,0.9149392178746498) 54%);
-}
-
-.fondo2{
-    background: rgb(197,180,170);
-    background: linear-gradient(137deg, rgba(197, 180, 170, 0.841) 0%, rgba(225,226,230,1) 54%);
-}
-
-.fondo3{
-    background: rgb(176,176,166);
-    background: linear-gradient(137deg, rgba(166, 173, 176, 0.839) 0%, rgba(225,226,230,0.9149392178746498) 54%);
-}
-
-.fondo4{
-    background: rgb(76,76,75);
-    background: linear-gradient(137deg, rgba(76, 75, 76, 0.656) 0%, rgba(235,235,235,1) 54%);
-}
-
-.fondo5{
-    background: rgb(76,76,75);
-    background: linear-gradient(137deg, rgba(171, 180, 197, 0.656) 0%, rgba(225,226,230,1) 54%);
-}
-
-
-/* Contact */
-/* #contactModal .modal-body{
-    background: rgb(76,76,75);
-    background: linear-gradient(137deg, rgba(255, 255, 255, 0.65) 10%, rgb(175, 175, 175) 54%);
-
-    border-radius: 3px;
-}
-
-#contactModal .info_body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 20px;
-}
-
-#contactModal .info{
-    flex: 3;
-    padding: 0 0 0 50px;
-}
-
-#contactModal .image{
-    flex: 2;
-} */
-
-/* pruebas */
 #contacto{
     height: 50vh;
     padding: 50px;
@@ -513,38 +426,8 @@ a{
     opacity: 0;
 }
 
-.arrow-up{
-    position: absolute;
-    top: 8px;
-    right: 0px;
-    width: 60px;
-    transform: rotate(-90deg);
-    filter: brightness(50%) invert();
-}
-
-.animate_arrow-up{
-    animation: arrow-up 0.8s ease-in-out infinite;
-}
-
-.animate_arrow-up:hover{
-    animation-play-state: paused;
-}
-
-@keyframes arrow-up{
-    0% {
-        transform: rotate(-90deg) translate(0px, 0);
-    }
-    50% {
-        transform: rotate(-90deg) translate(7px, 0);
-    }
-    100% {
-        transform: rotate(-90deg) translate(0px, 0);
-    }
-}
-
-/* Pruebas */
 #about{
-    height: 60vh;
+    height: 70vh;
     opacity: 1;
     transition: height 500ms ease-in;
 }
@@ -559,27 +442,30 @@ a{
 }
 
 body{
-    background-color: rgb(147, 107, 226);
+    background-color: rgb(255, 255, 255);
 }
 
-#work{
-    height: 100vh;
-    /* width: 100vw; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-
-    /* flex: 1; */
-    width: 0px;
-    overflow: hidden;
-
-    transition: all 0.5s ease;
-}
 
 #page.show #work{
     width: 100vw;
     flex: 4;
+}
+
+#work .carousel-inner{
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#page.show #work .carousel-inner{
+    opacity: 1;
+}
+
+#page.show #about-btn, #page.show #contact-btn{
+    display: none;
+}
+
+#page.show .container{
+    max-width: 100%
 }
 
 #page.show #hero-image{
@@ -600,4 +486,60 @@ body{
 #home{
     width: 100vw;
     flex: 1;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+
+    position: absolute;
+    left: 8px;
+    top: 0px; 
+}
+
+.icon{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    /* background-color: #333; */
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+.icon:hover{
+    width: 50px;
+    height: 50px;
+}
+
+.icon::before, 
+.icon::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.4s ease;
+}
+
+.icon::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.icon::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.icon:hover::before {
+    transform: translate(-55%, -100%) rotate(45deg);
+}
+
+.icon:hover::after {
+    transform: translate(-50%, 100%) rotate(-45deg);
 }

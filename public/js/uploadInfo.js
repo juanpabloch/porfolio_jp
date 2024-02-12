@@ -1,5 +1,5 @@
 // const modelAbout = document.getElementById('aboutModal').querySelector('.info_body')
-const modelWorks = document.getElementById('worksModal').querySelector('.carousel-inner')
+const modelWorks = document.getElementById('work').querySelector('.carousel-inner')
 // const modelContact = document.getElementById('contactModal').querySelector('.info_body')
 
 fetch("./public/js/data.json")
@@ -23,7 +23,7 @@ function uploadWorkData(data) {
 
     for (let i = 0; i < data.length; i++) {
         html += `
-            <div class="carousel-item ${i == 0 ? "active" : "" } fondo${i + 1}">
+            <div class="carousel-item ${i == 0 ? "active" : "" }">
                 <div class="item-container">
                     <div class="image-container">
                         <div class="image">

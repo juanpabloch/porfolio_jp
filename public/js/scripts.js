@@ -8,6 +8,9 @@ const aboutContainer = document.getElementById('about')
 const aboutLink = document.getElementById('about-btn')
 
 const workContainer = document.getElementById('work')
+const workLink = document.getElementById('work-btn')
+const closeWork = document.querySelector("#work #closeBtn")
+
 const homeContainer = document.getElementById('home')
 
 const pageContainer = document.getElementById('page')
@@ -48,11 +51,20 @@ linksBtns.forEach(btn=>{
     })
 })
 
+closeWork.addEventListener("click", (e)=>{
+    document.querySelector("#work").style.width = "0px";
+    setTimeout(()=>{
+        pageContainer.classList.remove('show')
+    }, 500)
+    workLink.classList.remove("onClick_work-btn");
+})
 
 let glitchAnimation;
 linksBtns.forEach(btn=>{
     btn.addEventListener("mouseover", (e)=>{
-       document.querySelector("#hero-image").classList.add("animate_glitch") 
+        if (!(e.target.dataset.link == "work" && e.target.classList.contains("onClick_work-btn"))) {
+            document.querySelector("#hero-image").classList.add("animate_glitch") 
+        }
     })
 
     btn.addEventListener("mouseout", (e)=>{
