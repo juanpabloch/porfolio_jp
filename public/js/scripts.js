@@ -122,10 +122,3 @@ window.addEventListener('scroll', () => {
     // Actualizar la última posición de desplazamiento
     lastScrollPos = currentScrollPos;
 });
-
-
-// const experienceModal = document.getElementById('experienceModal')
-// experienceModal.addEventListener('shown.bs.modal', function () {
-//     console.log("HOMA")
-// })
-

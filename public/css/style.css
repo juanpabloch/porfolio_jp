@@ -91,10 +91,6 @@ a{
     flex: 1;
 }
 
-#home{
-
-}
-
 #hero-image{
     position: absolute;
     transform: rotate(90deg);
