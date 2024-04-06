@@ -56,6 +56,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #FF6723;
 }
 
 .hide{
@@ -147,7 +148,7 @@ a{
     writing-mode:sideways-lr;/* should be the one */  
     -webkit-writing-mode: vertical-lr;
     
-    margin: 0px calc(1vh - 30px);
+    margin: 0px calc(1vh - 25px);
     font-size: calc(3vh + 7vmin);
 }
 
@@ -255,12 +256,23 @@ a{
     .container{
         max-width: 100%;
     }
+
+    .links-container a{
+        margin: 0px calc(1vh - 22px);
+    }
 }
 
-@media screen and (max-height:900px) {
-    .links-container a{ 
-        margin: 0px calc(1vh - 30px);
+@media screen and (max-width:500px){
+    .links-container a{
+        margin: 0px calc(1vh - 20px);
     }
+}
+
+
+@media screen and (max-height:900px) {
+    /* .links-container a{ 
+        margin: 0px calc(1vh - 25px);
+    } */
 }
 
 @media screen and (max-height:620px) {
@@ -272,6 +284,12 @@ a{
 @media screen and (max-height:500px) {
     .links-container a{ 
         margin: 0px calc(1vh - 13px);
+    }
+}
+
+@media screen and (max-height: 800px) and (min-width: 1500px) {
+    #hero-image{
+        width: 870px;
     }
 }
 
@@ -292,16 +310,16 @@ a{
     justify-content: center;
     align-items: center;
     
-    background-color: #000000;
-
+    background-color: #000000ae;
     transition: all 0.7s ease;
 }
 
 #work .carousel-item{
     border-radius: 2px;
     transition: transform 1500ms ease, opacity .5s ease-out;
-    color: #ffffffac;
+    color: #ffffffcc;
 }
+
 
 #work .carousel-item .info h2{
     font-family: "Archivo Black", sans-serif;
@@ -325,10 +343,6 @@ a{
     transition: all 0.5s ease;
 }
 
-#work .carousel-item .info a:hover{
-    /* color: #000000b5; */
-}
-
 #work .carousel-item .item-container{
     display: flex;
     justify-content: center;
@@ -339,6 +353,8 @@ a{
 
 #work .carousel-item .image-container{
     flex: 3;
+    margin-right: 0;
+    transition: margin-right 0.5s ease;
 }
 
 #work .carousel-item .image-container .image{
@@ -348,7 +364,7 @@ a{
 
 #work .carousel-item .info{
     flex: 3;
-    padding: 0 30px;
+    padding: 0 20px;
     margin: 30px 0;
     height: 600px;
     display: flex;
@@ -357,12 +373,12 @@ a{
     flex-direction: column;
 }
 
-#work .arrow{
+/* #work .arrow{
     width: 50px;
     transform: rotate(-180deg);
     filter: invert();
     cursor: pointer;
-}
+} */
 
 #page.show #work{
     width: 100vw;
@@ -376,6 +392,7 @@ a{
 
 #page.show #work .carousel-inner{
     opacity: 1;
+    height: 95vh;
 }
 
 #work .work-container{
@@ -386,6 +403,10 @@ a{
     #work .carousel-item .item-container {
         padding: 20px 65px;
     }
+
+    #work .carousel-item .info {
+        padding: 0 20px 0 0;
+    }   
 }
 
 @media screen and (max-width:1000px) {
@@ -417,13 +438,28 @@ a{
     }
 }
 
+@media screen and (max-width:900px) {
+    #work .carousel-item .item-container {
+        flex-direction: column;
+    }
+
+    #work .carousel-item .info{
+        margin: 0 0;
+        padding: 10px 0;
+    }
+
+    #work .carousel-item .info p{
+        font-size: 1.1rem;
+    }
+}
+
 @media screen and (max-width:800px) {
     .onClick_work-btn {
         font-size: calc(1vh + 13vmin) !important;
     }
 
     #work .carousel-item .item-container {
-        padding: 20px 50px;
+        padding: 0px 35px;
     }
 }
 
@@ -505,17 +541,39 @@ a{
 
 /* CONTACTO */
 #contacto{
-    height: 50vh;
-    padding: 50px;
+    height: 55vh;
+    /* padding: 80px 0px 0px 0px; */
     background: url('../img/bg/fondo2.png');
     background-position: initial;
     background-repeat:  no-repeat;
-    background-position: cover;
+    background-size: cover;
     color: rgb(222, 222, 222);
 }
 
-#contacto .container{
+#contacto .contact{
     transition: opacity 0.7s ease;
+
+    padding: 0px 180px;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#contacto h2{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    
+}
+
+#contacto p{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
 }
 
 .opacity0{
@@ -525,20 +583,154 @@ a{
 
 /* ABOUT */
 #about{
-    height: 90vh;
+    height: auto;
     opacity: 1;
     transition: height 500ms ease-in;
     overflow: hidden;
+    z-index: 2000;
+    position: relative;
 }
 
 #about.close{
-    height: 0px;
+    height: 0;
     opacity: 0;
 }
 
 #about .about-text{
-    padding: 80px 100px;
+    padding: 70px 180px;
     font-size: 1.2rem;
     letter-spacing: 1px;
     line-height: 1.4;
+    opacity: 1;
+    transition: opacity 1.2s ease;
+}
+
+#about .about-text p{
+    text-align: justify;
+}
+
+#about h2{
+    line-height: 1;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Archivo Black", sans-serif;
+}
+
+#about .about-subtitle{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#about.close .about-text{
+    opacity: 0;
+}
+
+#about .experience-btn{
+    border: none;
+    background: none;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    color: #00000093;
+    transition: all 0.4s cubic-bezier(.17,-0.11,.89,1.25);
+    letter-spacing: 1px;
+}
+
+#about .experience-btn:hover{
+    color: #000000;
+}
+
+
+/* EXPERIENCE */
+#experienceModal .experience-content{
+    padding: 25px;
+}
+
+
+#experienceModal .modal-title{
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+#experienceModal .experience-data h2{
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+}
+
+#experienceModal .experience-data small{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#experienceModal .experience-data li{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width:1000px) {
+    #about .about-text{
+        padding: 50px 100px;
+    }
+
+    #contacto .contact{
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #about .about-text{
+        padding: 50px 80px;
+    }
+
+    #contacto .contact{
+        padding: 0 80px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #about .about-text{
+        padding: 50px 30px 50px 35px;
+    }
+
+    #contacto .contact{
+        padding: 0 35px;
+    }
+}
+
+@media screen and (max-height:620px) and (max-width:700px) {
+    #about .about-text{
+        padding: 60px 70px;
+    }
+
+    #contacto .contact{
+        padding: 0 70px;
+    }
+}
+
+@media screen and (max-height:620px) and (max-width:650px) {
+    #about .about-text{
+        padding: 50px 60px;
+    }
+
+    #contacto .contact{
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-height:620px) and (max-width:600px) {
+    #about .about-text{
+        padding: 50px 50px;
+    }
+
+    #contacto .contact{
+        padding: 50px 0;
+    }
+}
+
+
+#experienceModal{
+    z-index: 2000;
 }

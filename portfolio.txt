@@ -62,9 +62,53 @@ Este proyecto se creó como parte del curso "CS50'S WEB PROGRAMMING WITH PYTHON 
 
 
 
+¡Hola! ¡Soy Juan Pablo, programador full-stack! 
+Me desempeño como desarrollador web hace más de 2 años, tanto en el front-end como en el back-end.
+
+Disfruto formando parte del proceso de creación de aplicaciones web, desde la planificación, la elección de tecnologías, hasta la estructuracion e implementación de funcionalidades escribiendo líneas de código "mágicas".
+
+Desde marzo del 2020 he completado diversos cursos de desarrollo web y he puesto a prueba mis habilidades en una variedad de proyectos, desde páginas web, armado de API's, hasta aplicaciones de escritorio.
+Siempre con ganas de aprender y mejorar mis habilidades.
+
+Además de mi pasión por la tecnología y la programación, tengo interés en la educación, mi afan de compartir mis conocimientos me llevaron a formar parte del equipo de tutores en Argentina programa #SeProgramar. Me gusta ayudar a las personas ya sea resolviendo problemas de programación o simplemente prestando un oido. Practicar deportes es una pasion de chico amo jugar al básquet, pero estoy para un fulbito tambien.
+
+leer mas sobre mi experiencia laboral
+
+
+¡Vamos a crear algo genial juntos!
 
 
 
+Me considero un solucionador de problemas incansable, no descanso hasta alcanzar mi objetivo y lo más importante, un buen compañero. 
 
+Disfruto formando parte del proceso de creación de aplicaciones web, desde la planificación y la elección de tecnologías, hasta la estructuracion e implementación de funcionalidades escribiendo líneas de código (mágicas). He completado diversos cursos de desarrollo web y he puesto a prueba mis habilidades en una variedad de proyectos, desde páginas web hasta API's. Siempre con ganas de mejorar mis habilidades y aportar a la creación de aplicaciones web innovadoras.
+
+
+Además de mi pasión por la tecnología y la programación, tengo interés en la educación (experiencia en tutorías de programación), brindar ayuda a los demás (ya sea resolviendo problemas de programación o simplemente charlando sobre la vida), y practicar deportes (amo jugar al básquet, pero estoy para un fulbito).
+
+
+Puedes descargar mi cv aqui
+
+
+EXPERIENCIA LABORAL
+the-8Agency (Agencia de marketing digital): desde marzo 2022 - actual
+    - Lider proyectos en Python y Django, creacion del Backlog, distribucion de tareas, analisis de producto
+    - Desarrollador fullstack, utilizando Django como base para backend y el sistema de templates como frontend, 
+        html, css, boostrap, javascript, jquery. Implementacion de apis de google, librerias de python como django-allauth para crear accesos con redes sociales, 
+        PIL para el manejo de imagenes, etc.
+    - Proyectos con Wagtail (Django) con el que realizamos paginas web con un CMS incorporado para poder editar el contenido de las mismas en tiempo real.
+    - Creacion de APIs para comunicacion entre productos de la empresa con django. 
+
+
+TRABAJOS
+
+{
+    "title": "Mail project",
+    "url": "https://django-email-app.onrender.com",
+    "github": "https://github.com/juanpabloch/cs50-Mail-project",
+    "description": "Plataforma para envío y recepción de mensajes.<br/>Este proyecto se creó como parte del curso CS50'S WEB PROGRAMMING WITH PYTHON AND JAVASCRIPT. La aplicación demuestra habilidades en el desarrollo web utilizando el framework Django para el backend y HTML, CSS y JavaScript para el frontend. La implementación de funciones de mensajería, incluyendo el envío, recepción, respuesta y archivado de mensajes entre usuarios registrados, proporciona una experiencia completa en el desarrollo de aplicaciones web interactivas y dinámicas.<br/><br/> <b>Tecnologías Utilizadas:</b> Django (Python), HTML, CSS, JavaScript.",
+    "tags": ["Django", "HTML", "CSS", "JavaScript"],
+    "image": "books.png"
+}
 
 

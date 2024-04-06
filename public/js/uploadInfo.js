@@ -33,9 +33,8 @@ function uploadWorkData(data) {
                     <div class="info">
                         <h2>${data[i].title}</h2>
                         <p>${data[i].description}</p>
-                        <a href="${data[i].url}" target="_blank">VER WEB</a>
-                        <br/>
-                        <a href="${data[i].github}" target="_blank">VER CODIGO</a>
+                        <a class="mb-1" href="${data[i].url}" target="_blank">VER WEB</a>
+                        <a class="mb-1" href="${data[i].github}" target="_blank">VER CODIGO</a>
                     </div>
                 </div>
             </div>
